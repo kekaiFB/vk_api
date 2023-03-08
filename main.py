@@ -3,13 +3,9 @@ from python_file import (parse_cmd
                         , init_session 
                         , output_data 
                         )
-
+API_V = 5.135
 
 def main():
-
-    API_V = 5.135
-
-    
     try:
         vk = init_session.init_session()
     except Exception as e:
@@ -19,7 +15,6 @@ def main():
     if not args.id:
         print("Argument ID missed!")
         return 1
-
 
     friend_list = add_friend_user.add_friend_user(vk, args.id)
     if friend_list:
