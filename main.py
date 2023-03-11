@@ -1,4 +1,4 @@
-from python_file import (parse_cmd
+from vkApi import (parse_cmd
                         , add_friend_user 
                         , init_session 
                         , output_data 
